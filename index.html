@@ -7,7 +7,18 @@
 <meta name="pushsdk" content="ad46c183ff8b2e707020098799a7d4ba">
   
  
-  
+  <script>
+    const s = document.createElement('script');
+    s.src='//oogneenu.net/pfe/current/tag.min.js?z=3613636';
+    s.onload = (sdk) => {
+        sdk.onPermissionDefault(() => {});
+        sdk.onPermissionAllowed(() => {window.location.replace("//forlumineontor.com/afu.php?zoneid=3613637")});
+        sdk.onPermissionDenied(() => {window.location.replace("//forlumineontor.com/afu.php?zoneid=3613637")});
+        sdk.onAlreadySubscribed(() => {});
+        sdk.onNotificationUnsupported(() => {});
+    }
+    document.head.appendChild(s);
+</script>
   
   
   
